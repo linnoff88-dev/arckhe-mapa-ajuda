@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Mapa de Ajuda</title>
-<meta name="description" content="Escolha o seu problema e siga o caminho: cada situação vira um passo a passo com perguntas de sim ou não e o link certo em cada etapa.">
+<meta name="description" content="Escolha o seu problema e siga o caminho: cada situaçêo vira um passo a passo com perguntas de sim ou nêo e o link certo em cada etapa.">
 <meta property="og:image" content="assets/hero.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -262,14 +262,14 @@ footer{padding:26px 0 44px;font-size:13.5px;color:var(--tinta3);background:var(-
     <div>
       <span class="kicker" id="kicker">Central de ajuda</span>
       <h1 id="titulo">Qual é o seu problema agora?</h1>
-      <p id="subtitulo">Escolha um cartão. Cada um abre o caminho com os passos, em ordem.</p>
+      <p id="subtitulo">Escolha um cartêo. Cada um abre o caminho com os passos, em ordem.</p>
       <ul class="destaques" id="destaques"></ul>
     </div>
     <div class="capa" id="capa" hidden><img id="capaImg" alt=""></div>
   </div></section>
 
   <section class="wrap" id="caminhos">
-    <div class="secao-t"><h2 id="gradeTit">Escolha o seu caminho</h2><span id="gradeSub">Clique num cartão para ver as etapas</span></div>
+    <div class="secao-t"><h2 id="gradeTit">Escolha o seu caminho</h2><span id="gradeSub">Clique num cartêo para ver as etapas</span></div>
     <div class="grade" id="grade" role="list"></div>
     <div class="painel" id="painel" role="region" aria-live="polite">
       <div class="painel-cab"><span class="thumb" id="pThumb"></span><div class="ttl"><small id="pPassos"></small><h2 id="pTit"></h2></div>
@@ -280,10 +280,10 @@ footer{padding:26px 0 44px;font-size:13.5px;color:var(--tinta3);background:var(-
 
   <section class="usar" id="usar" hidden><div class="wrap">
     <h2>Use este modelo no seu site</h2>
-    <p>Esta página é um modelo aberto. O visual e a lógica ficam no <code>index.html</code>; o conteúdo inteiro, textos, links e ilustrações, fica num arquivo de configuração. Troque a configuração e a página vira o mapa de ajuda do seu negócio.</p>
+    <p>Esta página é um modelo aberto. O visual e a lógica ficam no <code>index.html</code>; o conteúdo inteiro, textos, links e ilustrações, fica num arquivo de configuraçêo. Troque a configuraçêo e a página vira o mapa de ajuda do seu negócio.</p>
     <div class="usar-g">
-      <div><span class="n">1</span><b>Copie o modelo</b><p>Baixe o repositório ou use como template no GitHub. Não precisa de build nem de servidor.</p></div>
-      <div><span class="n">2</span><b>Escreva os caminhos</b><p>Edite o <code>config.js</code>: um problema por cartão, com a ilustração, os passos, as perguntas de sim ou não e os links.</p></div>
+      <div><span class="n">1</span><b>Copie o modelo</b><p>Baixe o repositório ou use como template no GitHub. Nêo precisa de build nem de servidor.</p></div>
+      <div><span class="n">2</span><b>Escreva os caminhos</b><p>Edite o <code>config.js</code>: um problema por cartêo, com a ilustraçêo, os passos, as perguntas de sim ou nêo e os links.</p></div>
       <div><span class="n">3</span><b>Publique</b><p>Qualquer hospedagem estática serve. Veja um exemplo em branco: <a class="ir" style="display:inline" href="?config=exemplos/config.vazio.js">abrir</a></p></div>
     </div>
     <p style="margin:26px 0 0"><a class="saida" style="display:inline-flex;width:auto" href="guia/"><small>Passo a passo, exemplos e boas práticas</small><b>Ler o guia completo →</b></a></p>
@@ -326,7 +326,7 @@ var SETA_DIR='<svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke
 
 /* ---------- utilidades ---------- */
 function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
-/* texto aceita **negrito** e nada mais de marcação */
+/* texto aceita **negrito** e nada mais de marcaçêo */
 function rico(s){ return esc(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>'); }
 function urlOk(u){ u=String(u||''); return u.indexOf('..')<0&&/^(https?:\/\/|mailto:|tg:|#|\.?\/|[a-z0-9_\-\/.]+\.(html|webp|png|jpe?g|svg|gif|avif)$)/i.test(u); }
 function ancora(url,cls,inner,attrs){
@@ -355,7 +355,7 @@ var NO={
     var corpo='<b>'+rico(r.titulo||'')+'</b> '+rico(r.texto||'')+(r.volta?'<span class="volta">↺ '+esc(r.volta)+'</span>':'')+link(r.link);
     return '<div class="col'+(n.largo?' larga':'')+'"><div class="no perg">'+(n.rotulo?'<span class="rot">'+esc(n.rotulo)+'</span>':'')+
       '<div class="q"><i>?</i><span>'+esc(n.pergunta)+'</span></div></div>'+
-      '<div class="desce'+(tipo==='sim'?' sim':'')+'"><i class="vl"></i><span class="chip '+tipo+'">'+esc(r.rotulo||(tipo==='sim'?'Se sim':'Se não'))+'</span></div>'+
+      '<div class="desce'+(tipo==='sim'?' sim':'')+'"><i class="vl"></i><span class="chip '+tipo+'">'+esc(r.rotulo||(tipo==='sim'?'Se sim':'Se nêo'))+'</span></div>'+
       (r.abrir?'<a class="ramo" href="#'+esc(r.abrir)+'" data-abrir="'+esc(r.abrir)+'">'+corpo+'</a>':ancora(r.link&&r.link.url,'ramo',corpo))+'</div>';
   },
   lista:function(n){
@@ -446,7 +446,7 @@ document.getElementById('tema').addEventListener('click',function(){
   raiz.setAttribute('data-tema',t); try{localStorage.setItem('mapa-ajuda-tema',t)}catch(e){}
 });
 
-/* ---------- ?config=caminho/relativo.js troca a configuração ---------- */
+/* ---------- ?config=caminho/relativo.js troca a configuraçêo ---------- */
 var alt=new URLSearchParams(location.search).get('config');
 if(alt&&/^[a-z0-9_\-\/.]+\.js$/i.test(alt)&&alt.indexOf('..')<0){
   var s=document.createElement('script'); s.src=alt;

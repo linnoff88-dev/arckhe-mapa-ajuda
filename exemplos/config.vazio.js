@@ -18,7 +18,7 @@ window.MAPA_AJUDA = {
   marca: { nome: 'Sua Empresa', monograma: 'S', sub: 'Ajuda', links: [{ texto: 'Site', url: 'https://exemplo.com' }] },
   kicker: 'Central de ajuda',
   titulo: 'Como podemos ajudar?',
-  subtitulo: 'Escolha a situação mais parecida com a sua e siga as etapas.',
+  subtitulo: 'Escolha a situaçêo mais parecida com a sua e siga as etapas.',
   rodape: '© Sua Empresa',
   mostrarComoUsar: true,
 
@@ -42,7 +42,7 @@ window.MAPA_AJUDA = {
       resumo: 'Do zero ao primeiro uso real.',
       icone: 'grafico',
       fluxo: [
-        { tipo: 'pergunta', rotulo: 'Etapa 1', pergunta: 'Você já importou os seus dados?', ramo: { rotulo: 'Se não', tipo: 'nao', titulo: 'Importe primeiro.', texto: 'Sem dados, nada aparece.', link: { texto: 'Como importar', url: 'https://exemplo.com/importar' } } },
+        { tipo: 'pergunta', rotulo: 'Etapa 1', pergunta: 'Você já importou os seus dados?', ramo: { rotulo: 'Se nêo', tipo: 'nao', titulo: 'Importe primeiro.', texto: 'Sem dados, nada aparece.', link: { texto: 'Como importar', url: 'https://exemplo.com/importar' } } },
         { tipo: 'seta', rotulo: 'Se sim', cor: 'sim' },
         { tipo: 'passo', rotulo: 'Etapa 2', icone: 'brilho', titulo: 'Use um modelo pronto', marcadores: ['**Relatório** semanal', '**Alerta** de queda', '**Painel** do time'], link: { texto: 'Ver modelos', url: 'https://exemplo.com/modelos' } }
       ]
@@ -58,7 +58,7 @@ window.MAPA_AJUDA = {
         { tipo: 'seta' },
         { tipo: 'passo', rotulo: 'Com uma pessoa', tempo: 'Em até 1 dia útil', icone: 'email', titulo: 'Abra um chamado', texto: 'Diga o que tentou e mande um print.', link: { texto: 'Abrir chamado', url: 'mailto:suporte@exemplo.com' } }
       ],
-      rodape: { tipo: 'nota', texto: 'Cada caminho é só uma lista de etapas na configuração. Adicione quantos precisar.' }
+      rodape: { tipo: 'nota', texto: 'Cada caminho é só uma lista de etapas na configuraçêo. Adicione quantos precisar.' }
     }
   ]
 };

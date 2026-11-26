@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>mapa-ajuda — central de ajuda em formato de mapa</title>
-<meta name="description" content="Modelo aberto de central de ajuda em formato de mapa: o visitante escolhe o problema e recebe um caminho em etapas, com perguntas de sim ou não e o link certo em cada uma.">
+<meta name="description" content="Modelo aberto de central de ajuda em formato de mapa: o visitante escolhe o problema e recebe um caminho em etapas, com perguntas de sim ou nêo e o link certo em cada uma.">
 <link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/mapa-ajuda/guia/">
 <link rel="alternate" hreflang="en" href="https://inematds.github.io/mapa-ajuda/guia/en/">
 <link rel="alternate" hreflang="es" href="https://inematds.github.io/mapa-ajuda/guia/es/">
@@ -144,7 +144,7 @@
     <div>
       <span class="chip">Modelo aberto · MIT · sem build</span>
       <h1>Sua central de ajuda vira um <span class="amb">mapa</span></h1>
-      <p class="lead">Em vez de FAQ, a pessoa escolhe o problema que tem agora e recebe um caminho em ordem, com perguntas de sim ou não e o link certo em cada etapa.</p>
+      <p class="lead">Em vez de FAQ, a pessoa escolhe o problema que tem agora e recebe um caminho em ordem, com perguntas de sim ou nêo e o link certo em cada etapa.</p>
       <div class="cta">
         <a class="btn" href="../" target="_blank" rel="noopener">Ver o mapa ao vivo</a>
         <a class="btn ghost" href="#guia">Começar o guia</a>
@@ -161,12 +161,12 @@
 
 <section id="oque"><div class="wrap">
   <span class="chip">O que é</span>
-  <h2>Ajuda que mostra o caminho, não uma lista de artigos</h2>
+  <h2>Ajuda que mostra o caminho, nêo uma lista de artigos</h2>
   <p class="sub">Três ideias fazem o mapa funcionar melhor que um FAQ.</p>
-  <figure style="margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="assets/banner-grade.jpg" alt="Mapa de Ajuda: escolha o problema, passos em ordem, perguntas de sim ou não" loading="lazy" style="width:100%;display:block"></figure>
+  <figure style="margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="assets/banner-grade.jpg" alt="Mapa de Ajuda: escolha o problema, passos em ordem, perguntas de sim ou nêo" loading="lazy" style="width:100%;display:block"></figure>
   <div class="grid g3">
-    <div class="card"><h3>🧭 Um problema, um caminho</h3><p>Os cartões são escritos como a pessoa pediria ajuda ("não encontro um conteúdo"). Um clique abre as etapas em ordem, na mesma página.</p></div>
-    <div class="card"><h3>❓ Perguntas de corte</h3><p>No ponto em que a maioria trava, uma pergunta de sim ou não manda de volta quem ainda não fez o pré-requisito. Menos dúvida repetida no suporte.</p></div>
+    <div class="card"><h3>🧭 Um problema, um caminho</h3><p>Os cartões sêo escritos como a pessoa pediria ajuda ("nêo encontro um conteúdo"). Um clique abre as etapas em ordem, na mesma página.</p></div>
+    <div class="card"><h3>❓ Perguntas de corte</h3><p>No ponto em que a maioria trava, uma pergunta de sim ou nêo manda de volta quem ainda nêo fez o pré-requisito. Menos dúvida repetida no suporte.</p></div>
     <div class="card"><h3>📄 Um arquivo só</h3><p>Visual e lógica ficam no <code>index.html</code>. Textos, links e ilustrações ficam no <code>config.js</code>. Trocou o arquivo, trocou o mapa.</p></div>
   </div>
 </div></section>
@@ -176,7 +176,7 @@
     <div>
       <span class="chip">Veja funcionando</span>
       <h2>O mapa do ecossistema INEMA</h2>
-      <p class="sub">O modelo já vem configurado com 6 caminhos que cobrem inema.club, inema.pro, inema.vip, eventos, news, busca e o arquivo de aventura. Clique num cartão e siga as etapas. Há também um exemplo genérico, de uma empresa fictícia, para usar como ponto de partida.</p>
+      <p class="sub">O modelo já vem configurado com 6 caminhos que cobrem inema.club, inema.pro, inema.vip, eventos, news, busca e o arquivo de aventura. Clique num cartêo e siga as etapas. Há também um exemplo genérico, de uma empresa fictícia, para usar como ponto de partida.</p>
       <div class="cta">
         <a class="btn" href="../" target="_blank" rel="noopener">Abrir o mapa INEMA</a>
         <a class="btn ghost" href="../?config=exemplos/config.vazio.js" target="_blank" rel="noopener">Abrir o exemplo genérico</a>
@@ -188,21 +188,21 @@
 
 <section id="fluxo"><div class="wrap">
   <span class="chip">Como funciona</span>
-  <h2>Do cartão ao link certo</h2>
+  <h2>Do cartêo ao link certo</h2>
   <p class="sub">Cada caminho é uma sequência de peças. O motor monta a trilha na horizontal no computador e em coluna no celular.</p>
   <div class="flow">
     <span>Escolhe o problema</span><span class="arr">→</span>
     <span>Abre o caminho</span><span class="arr">→</span>
     <span>Passo com link</span><span class="arr">→</span>
-    <span>Pergunta sim/não</span><span class="arr">→</span>
+    <span>Pergunta sim/nêo</span><span class="arr">→</span>
     <span>Saída para outro caminho</span>
   </div>
   <div class="tipos">
-    <div class="card"><h3>Passo</h3><p>Uma ação com um link. <code>passo</code></p></div>
-    <div class="card"><h3>Seta</h3><p>O que leva ao próximo: "Não achou?", "Se sim". <code>seta</code></p></div>
-    <div class="card"><h3>Pergunta</h3><p>Sim ou não, com um desvio para quem não está pronto. <code>pergunta</code></p></div>
+    <div class="card"><h3>Passo</h3><p>Uma açêo com um link. <code>passo</code></p></div>
+    <div class="card"><h3>Seta</h3><p>O que leva ao próximo: "Nêo achou?", "Se sim". <code>seta</code></p></div>
+    <div class="card"><h3>Pergunta</h3><p>Sim ou nêo, com um desvio para quem nêo está pronto. <code>pergunta</code></p></div>
     <div class="card"><h3>Lista</h3><p>Várias opções do mesmo nível, numeradas. <code>lista</code></p></div>
-    <div class="card"><h3>Saída</h3><p>Leva a outro cartão e liga os caminhos. <code>saida</code></p></div>
+    <div class="card"><h3>Saída</h3><p>Leva a outro cartêo e liga os caminhos. <code>saida</code></p></div>
   </div>
 </div></section>
 
@@ -240,7 +240,7 @@
 
   <div class="step"><div class="b">3</div><div>
     <h3>Escreva um caminho</h3>
-    <p>Cada problema é um cartão. O <code>fluxo</code> é a lista de peças, na ordem em que aparecem. Texto aceita <code>**negrito**</code>.</p>
+    <p>Cada problema é um cartêo. O <code>fluxo</code> é a lista de peças, na ordem em que aparecem. Texto aceita <code>**negrito**</code>.</p>
 <pre>{
   id: <span class="s">'suporte'</span>,
   titulo: <span class="s">'Algo deu errado'</span>,
@@ -250,9 +250,9 @@
   fluxo: [
     { tipo: <span class="s">'passo'</span>, rotulo: <span class="s">'Mais rápido'</span>, tempo: <span class="s">'Na hora'</span>, titulo: <span class="s">'Busque na base de ajuda'</span>,
       link: { texto: <span class="s">'Buscar'</span>, url: <span class="s">'https://exemplo.com/ajuda'</span> } },
-    { tipo: <span class="s">'seta'</span>, rotulo: <span class="s">'Não achou?'</span> },
+    { tipo: <span class="s">'seta'</span>, rotulo: <span class="s">'Nêo achou?'</span> },
     { tipo: <span class="s">'pergunta'</span>, pergunta: <span class="s">'Você já tem conta?'</span>,
-      ramo: { rotulo: <span class="s">'Se não'</span>, tipo: <span class="s">'nao'</span>, titulo: <span class="s">'Crie primeiro.'</span>, abrir: <span class="s">'primeiros-passos'</span> } },
+      ramo: { rotulo: <span class="s">'Se nêo'</span>, tipo: <span class="s">'nao'</span>, titulo: <span class="s">'Crie primeiro.'</span>, abrir: <span class="s">'primeiros-passos'</span> } },
     { tipo: <span class="s">'seta'</span>, rotulo: <span class="s">'Se sim'</span>, cor: <span class="s">'sim'</span> },
     { tipo: <span class="s">'saida'</span>, pergunta: <span class="s">'Ainda travado?'</span>, texto: <span class="s">'Falar com uma pessoa'</span>, destino: <span class="s">'contato'</span> }
   ]
@@ -261,7 +261,7 @@
 
   <div class="step"><div class="b">4</div><div>
     <h3>Coloque as ilustrações</h3>
-    <p>Salve uma imagem por cartão em <code>assets/</code> (WebP, 3:2, até ~100 KB) e aponte no campo <code>imagem</code>. A capa da página vai em <code>capa</code>. Sem imagem, o cartão mostra o ícone. Use a mesma linha visual em todas: mesma paleta, luz e fundo, sem texto dentro da imagem.</p>
+    <p>Salve uma imagem por cartêo em <code>assets/</code> (WebP, 3:2, até ~100 KB) e aponte no campo <code>imagem</code>. A capa da página vai em <code>capa</code>. Sem imagem, o cartêo mostra o ícone. Use a mesma linha visual em todas: mesma paleta, luz e fundo, sem texto dentro da imagem.</p>
 <pre><span class="c"># converter uma imagem para WebP leve</span>
 <span class="k">ffmpeg</span> -i arte.png -vf scale=960:-1 -q:v 80 assets/suporte.webp</pre>
   </div></div>
@@ -274,17 +274,17 @@
 
   <div class="step"><div class="b">6</div><div>
     <h3>Publique</h3>
-    <p>Suba para o GitHub e ligue o Pages (ou arraste a pasta para a Vercel ou a Netlify). Não há build.</p>
+    <p>Suba para o GitHub e ligue o Pages (ou arraste a pasta para a Vercel ou a Netlify). Nêo há build.</p>
 <pre><span class="k">git add</span> -A && <span class="k">git commit</span> -m <span class="s">"meu mapa de ajuda"</span> && <span class="k">git push</span>
 <span class="k">gh api</span> -X POST repos/<span class="s">&lt;usuario&gt;/&lt;repo&gt;</span>/pages -f <span class="s">'source[branch]=main'</span> -f <span class="s">'source[path]=/'</span></pre>
   </div></div>
 
   <h2 style="margin-top:42px">Como escrever um bom caminho</h2>
   <div class="grid g3">
-    <div class="card"><h3>Na voz de quem pede</h3><p>"Preciso de ajuda com acesso", não "Suporte". A pessoa tem que se reconhecer no cartão.</p></div>
+    <div class="card"><h3>Na voz de quem pede</h3><p>"Preciso de ajuda com acesso", nêo "Suporte". A pessoa tem que se reconhecer no cartêo.</p></div>
     <div class="card"><h3>De 3 a 5 etapas</h3><p>Mais que isso, quebre em dois caminhos e ligue com uma Saída.</p></div>
-    <div class="card"><h3>Uma pergunta de corte</h3><p>No ponto onde a maioria trava. Quem não fez o anterior volta uma casa.</p></div>
-    <div class="card"><h3>Um link por passo</h3><p>E um verbo no botão: "Abrir", "Buscar", "Escrever".</p></div>
+    <div class="card"><h3>Uma pergunta de corte</h3><p>No ponto onde a maioria trava. Quem nêo fez o anterior volta uma casa.</p></div>
+    <div class="card"><h3>Um link por passo</h3><p>E um verbo no botêo: "Abrir", "Buscar", "Escrever".</p></div>
     <div class="card"><h3>Canais em ordem de velocidade</h3><p>No suporte: o que responde na hora primeiro, pessoas depois, e-mail por último.</p></div>
     <div class="card"><h3>Nunca um beco sem saída</h3><p>Todo caminho termina em outro caminho ou num canal humano.</p></div>
   </div>
@@ -295,8 +295,8 @@
   <h2>O mapa do INEMA, em três telas</h2>
   <p class="sub">Tudo isso sai do mesmo <code>config.js</code>, sem mexer no motor.</p>
   <div class="ex tres">
-    <figure><a href="../" target="_blank" rel="noopener"><img src="assets/ex-mapa.jpg" alt="Capa e cartões ilustrados do mapa" loading="lazy"></a><figcaption>A capa e os seis cartões, cada um com sua ilustração e a contagem de etapas.</figcaption></figure>
-    <figure><a href="../#comecar" target="_blank" rel="noopener"><img src="assets/ex-caminho.jpg" alt="Caminho Não sei por onde começar aberto" loading="lazy"></a><figcaption>O caminho "Não sei por onde começar": passos, pergunta de corte e a saída para o próximo caminho.</figcaption></figure>
+    <figure><a href="../" target="_blank" rel="noopener"><img src="assets/ex-mapa.jpg" alt="Capa e cartões ilustrados do mapa" loading="lazy"></a><figcaption>A capa e os seis cartões, cada um com sua ilustraçêo e a contagem de etapas.</figcaption></figure>
+    <figure><a href="../#comecar" target="_blank" rel="noopener"><img src="assets/ex-caminho.jpg" alt="Caminho Nêo sei por onde começar aberto" loading="lazy"></a><figcaption>O caminho "Nêo sei por onde começar": passos, pergunta de corte e a saída para o próximo caminho.</figcaption></figure>
     <figure><a href="../#suporte" target="_blank" rel="noopener"><img src="assets/ex-celular.jpg" alt="Mapa no celular, tema escuro" loading="lazy"></a><figcaption>No celular, tema escuro, aberto direto pelo link do caminho.</figcaption></figure>
   </div>
 </div></section>
@@ -304,11 +304,11 @@
 <section id="roadmap"><div class="wrap">
   <span class="chip">Roadmap</span>
   <h2>O que já existe e o que pode vir</h2>
-  <p class="sub">O que está marcado como ideia ainda não foi feito.</p>
-  <div class="phase"><div class="tag">Feito</div><div class="d"><strong>Motor + configuração + exemplos</strong><span>Página única com 5 tipos de peça, tema claro/escuro, link direto por caminho, ilustrações opcionais, mapa do ecossistema INEMA e exemplo genérico.</span></div></div>
+  <p class="sub">O que está marcado como ideia ainda nêo foi feito.</p>
+  <div class="phase"><div class="tag">Feito</div><div class="d"><strong>Motor + configuraçêo + exemplos</strong><span>Página única com 5 tipos de peça, tema claro/escuro, link direto por caminho, ilustrações opcionais, mapa do ecossistema INEMA e exemplo genérico.</span></div></div>
   <div class="phase"><div class="tag">Ideia</div><div class="d"><strong>Mapa em vários idiomas</strong><span>Um <code>config.js</code> por idioma e seletor na página.</span></div></div>
   <div class="phase"><div class="tag">Ideia</div><div class="d"><strong>Busca dentro do mapa</strong><span>Digitar a dúvida e ir direto ao caminho certo.</span></div></div>
-  <div class="phase"><div class="tag">Ideia</div><div class="d"><strong>Medir onde as pessoas param</strong><span>Contar quais caminhos e passos são mais abertos, para saber onde melhorar.</span></div></div>
+  <div class="phase"><div class="tag">Ideia</div><div class="d"><strong>Medir onde as pessoas param</strong><span>Contar quais caminhos e passos sêo mais abertos, para saber onde melhorar.</span></div></div>
 </div></section>
 
 <footer>

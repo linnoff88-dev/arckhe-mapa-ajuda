@@ -1,6 +1,6 @@
 # mapa-ajuda
 
-[![Help Map](guia/assets/banner-en.jpg)](https://inematds.github.io/mapa-ajuda/guia/en/)
+[![Help Map](guia/assets/banner-en.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/en/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -10,12 +10,12 @@ mapa-ajuda is a ready-made help center template for websites, courses, communiti
 
 ## 📖 User guide
 
-Full guide (landing + step by step): **https://inematds.github.io/mapa-ajuda/guia/en/**
+Full guide (landing + step by step): **https://linnoff88-dev.github.io/arckhe-/guia/en/**
 
 A template for a **help center in the form of a map**: the person picks the problem they have right now and gets a path in order, with yes-or-no questions and the right link at each step. One HTML page, no build and no server, with a 3D illustration on each card (optional: with no image, the card uses an icon).
 
-**Live (INEMA ecosystem example):** https://inematds.github.io/mapa-ajuda/
-**Generic example:** https://inematds.github.io/mapa-ajuda/?config=exemplos/config.vazio.js
+**Live (ARCKHÉ ecosystem example):** https://linnoff88-dev.github.io/arckhe-/
+**Generic example:** https://linnoff88-dev.github.io/arckhe-/?config=exemplos/config.vazio.js
 
 ## How to use
 
@@ -30,9 +30,9 @@ Opening it straight in the browser (`file://`) also works.
 | File | What it is |
 |---|---|
 | `index.html` | Engine: look, light/dark theme, path assembly. No need to touch it |
-| `config.js` | Content of the INEMA example (6 paths) |
+| `config.js` | Content of the ARCKHÉ example (6 paths) |
 | `exemplos/config.vazio.js` | Commented generic example, a starting point |
-| `assets/` | Illustrations of the INEMA example (cover + one per path) |
+| `assets/` | Illustrations of the ARCKHÉ example (cover + one per path) |
 | `ANALISE.md` | Analysis of the pattern: why it works and how to write good paths (in Portuguese) |
 
 ## General configuration

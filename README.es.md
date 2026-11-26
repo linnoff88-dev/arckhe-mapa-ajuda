@@ -1,6 +1,6 @@
 # mapa-ajuda
 
-[![Mapa de Ayuda](guia/assets/banner-es.jpg)](https://inematds.github.io/mapa-ajuda/guia/es/)
+[![Mapa de Ayuda](guia/assets/banner-es.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/es/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -10,12 +10,12 @@ mapa-ajuda es un modelo listo de centro de ayuda para sitios, cursos, comunidade
 
 ## 📖 Guía de uso
 
-Guía completa (landing + paso a paso): **https://inematds.github.io/mapa-ajuda/guia/es/**
+Guía completa (landing + paso a paso): **https://linnoff88-dev.github.io/arckhe-/guia/es/**
 
 Modelo de **centro de ayuda en formato de mapa**: la persona elige el problema que tiene ahora y recibe un camino en orden, con preguntas de sí o no y el enlace correcto en cada etapa. Una página HTML, sin build y sin servidor, con ilustración 3D en cada tarjeta (opcional: sin imagen, la tarjeta usa un ícono).
 
-**En vivo (ejemplo del ecosistema INEMA):** https://inematds.github.io/mapa-ajuda/
-**Ejemplo genérico:** https://inematds.github.io/mapa-ajuda/?config=exemplos/config.vazio.js
+**En vivo (ejemplo del ecosistema ARCKHÉ):** https://linnoff88-dev.github.io/arckhe-/
+**Ejemplo genérico:** https://linnoff88-dev.github.io/arckhe-/?config=exemplos/config.vazio.js
 
 ## Cómo usar
 
@@ -30,9 +30,9 @@ Abrirlo directo en el navegador (`file://`) también funciona.
 | Archivo | Qué es |
 |---|---|
 | `index.html` | Motor: visual, tema claro/oscuro, armado de los caminos. No hace falta tocarlo |
-| `config.js` | Contenido del ejemplo INEMA (6 caminos) |
+| `config.js` | Contenido del ejemplo ARCKHÉ (6 caminos) |
 | `exemplos/config.vazio.js` | Ejemplo genérico comentado, punto de partida |
-| `assets/` | Ilustraciones del ejemplo INEMA (portada + una por camino) |
+| `assets/` | Ilustraciones del ejemplo ARCKHÉ (portada + una por camino) |
 | `ANALISE.md` | Análisis del patrón: por qué funciona y cómo escribir buenos caminos (en portugués) |
 
 ## Configuración general

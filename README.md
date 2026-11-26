@@ -6,7 +6,7 @@
 </div>
 
 
-[![Mapa de Ajuda](guia/assets/banner.jpg)](https://inematds.github.io/mapa-ajuda/guia/)
+[![Mapa de Ajuda](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/)
 
 **ê°Å¸â¡Â§ê°Å¸â¡Â· [PortuguêÂªs](README.md) êÂ· ê°Å¸â¡Âºê°Å¸â¡Â¸ [English](README.en.md) êÂ· ê°Å¸â¡Âªê°Å¸â¡Â¸ [EspaêÂ±ol](README.es.md)**
 
@@ -16,12 +16,12 @@ O mapa-ajuda êÂ© um modelo pronto de central de ajuda para sites, cursos, c
 
 ## ê°Å¸ââ Guia de uso
 
-Guia completo (landing + passo a passo): **https://inematds.github.io/mapa-ajuda/guia/**
+Guia completo (landing + passo a passo): **https://linnoff88-dev.github.io/arckhe-/guia/**
 
 Modelo de **central de ajuda em formato de mapa**: a pessoa escolhe o problema que tem agora e recebe um caminho em ordem, com perguntas de sim ou nêÂ£o e o link certo em cada etapa. Uma pêÂ¡gina HTML, sem build e sem servidor, com ilustraêÂ§êÂ£o 3D em cada cartêÂ£o (opcional: sem imagem, o cartêÂ£o usa êÂ­cone).
 
-**Ao vivo (exemplo do ecossistema INEMA):** https://inematds.github.io/mapa-ajuda/
-**Exemplo genêÂ©rico:** https://inematds.github.io/mapa-ajuda/?config=exemplos/config.vazio.js
+**Ao vivo (exemplo do ecossistema ARCKHÉ):** https://linnoff88-dev.github.io/arckhe-/
+**Exemplo genêÂ©rico:** https://linnoff88-dev.github.io/arckhe-/?config=exemplos/config.vazio.js
 
 ## Como usar
 
@@ -36,9 +36,9 @@ Abrir direto no navegador (`file://`) tambêÂ©m funciona.
 | Arquivo | O que êÂ© |
 |---|---|
 | `index.html` | Motor: visual, tema claro/escuro, montagem dos caminhos. NêÂ£o precisa mexer |
-| `config.js` | ConteêÂºdo do exemplo INEMA (6 caminhos) |
+| `config.js` | ConteêÂºdo do exemplo ARCKHÉ (6 caminhos) |
 | `exemplos/config.vazio.js` | Exemplo genêÂ©rico comentado, ponto de partida |
-| `assets/` | IlustraêÂ§êÂµes do exemplo INEMA (capa + uma por caminho) |
+| `assets/` | IlustraêÂ§êÂµes do exemplo ARCKHÉ (capa + uma por caminho) |
 | `ANALISE.md` | AnêÂ¡lise do padrêÂ£o: por que funciona e como escrever bons caminhos |
 
 ## ConfiguraêÂ§êÂ£o geral

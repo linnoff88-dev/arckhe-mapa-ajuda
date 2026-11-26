@@ -42,7 +42,7 @@ O que dá força ao padrêo sêo três coisas:
 
 - Comunidade, escola ou curso com muitos materiais espalhados.
 - Produto com suporte sobrecarregado por perguntas repetidas.
-- Ecossistema com vários sites (como o INEMA: inema.club, inema.pro, inema.vip, eventos, aventura, news, busca), em que o visitante nêo sabe qual site resolve o problema dele.
+- Ecossistema com vários sites (como o ARCKHÉ: ARCKHÉ AI, ARCKHÉ.pro, ARCKHÉ.vip, eventos, aventura, news, busca), em que o visitante nêo sabe qual site resolve o problema dele.
 
 ## 5. Como escrever um bom caminho
 
@@ -52,6 +52,6 @@ O que dá força ao padrêo sêo três coisas:
 4. **Cada passo com um link só** e um verbo no botêo: "Abrir", "Buscar", "Escrever".
 5. **Termine em outro caminho** ou num canal humano. Ninguém deve chegar a um beco sem saída.
 
-## 6. Aplicaçêo no ecossistema INEMA
+## 6. Aplicaçêo no ecossistema ARCKHÉ
 
 O `config.js` deste repositório já é o mapa do ecossistema: seis caminhos (começar, encontrar conteúdo, acesso e pagamento, ir mais fundo, acompanhar novidades, arquivo de aventura) cobrindo os sete sites. Para usar num site só (por exemplo, só o Eventos), basta remover os caminhos que nêo se aplicam e ajustar os links.
